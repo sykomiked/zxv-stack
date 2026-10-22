@@ -15,7 +15,7 @@ crypto · nearcore · dapp · smart-contract · defi · sovereign · zxv
 
 The ZXV paraconsistent settlement layer: a four-valued logic kernel in
 which **only `TRUE` settles**. Contradictions (`TRUE + FALSE = BOTH`) are
-recorded, never coerced, never a panic. The full system — 48 kits in one
+recorded, never coerced, never a panic. The full system — 84 kits in one
 micro contract — is **live on NEAR mainnet**, registered (66 capabilities,
 all resolving), and exposed through a **serverless on-chain API** with a
 standardized bridge interface.
@@ -28,11 +28,12 @@ standardized bridge interface.
 │  zxv-sdk (Rust) · @zxv/developer-kit (TypeScript)         │
 │        │                                                  │
 │        ▼                                                  │
-│  zxv-core (f18889ea…) — the 48-kit micro contract         │
-│   28 BASE · 5 LAYERS · 7 SYSTEMS · 4 META · 4 API         │
+│  zxv-core (f18889ea…) — the 84-kit micro contract         │
+│   28 BASE · 5 LAYERS · 7 SYSTEMS · 4 META · 4 API · 4 UX
+│    + REWARDS (11) · PLAYER (10) · SYSTEM (10) · GAS (1)         │
 │        │                                                  │
 │        ▼                                                  │
-│  NEAR mainnet — 66 registered capabilities                │
+│  NEAR mainnet — 103 registered capabilities                │
 └──────────────────────────────────────────────────────────┘
 ```
 
