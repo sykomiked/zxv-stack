@@ -1,0 +1,24 @@
+[package]
+name = "zxv-sdk"
+version = "0.1.0"
+edition = "2021"
+description = "The ZXV developer SDK: drop-in integration for the paraconsistent settlement layer on NEAR mainnet. The gate, the rails (Dragon/Phoenix/Thunderbird cards), the receipt chain, the oracle, the treasury — typed, verified, one import."
+license = "Apache-2.0"
+repository = "https://github.com/sykomiked/zxv-developer-kit"
+keywords = ["near", "paraconsistent", "settlement", "rails", "cards", "oracle", "ai"]
+categories = ["cryptography", "no-std"]
+rust-version = "1.75"
+
+[dependencies]
+near-jsonrpc-client = { version = "0.9", optional = true }
+serde = { version = "1", features = ["derive"], optional = true }
+serde_json = { version = "1", optional = true }
+sha2 = "0.10"
+
+[features]
+default = ["std"]
+std = []
+near = ["dep:near-jsonrpc-client", "dep:serde", "dep:serde_json"]
+
+[dev-dependencies]
+serde_json = "1"

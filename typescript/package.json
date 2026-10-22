@@ -1,0 +1,40 @@
+{
+  "name": "@zxv/developer-kit",
+  "version": "0.1.0",
+  "description": "The ZXV developer kit: drop-in integration for the paraconsistent settlement layer on NEAR mainnet. Discover, verify, settle, and build on 18 registered subsystems.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node test/run.js"
+  },
+  "keywords": [
+    "near",
+    "paraconsistent",
+    "settlement",
+    "rails",
+    "cards",
+    "oracle",
+    "ai",
+    "sdk",
+    "web4",
+    "blockchain",
+    "typescript",
+    "smart-contract",
+    "defi"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sykomiked/zxv-stack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "homepage": "https://github.com/sykomiked/zxv-stack"
+}
